@@ -177,4 +177,51 @@ body {
         height: 40px;
         font-size: 20px;
     }
-  }
+  
+
+.screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    color: white;
+}
+
+#start-screen {
+    display: flex; /* إظهار شاشة البداية افتراضيًا */
+}
+
+#game-over-screen {
+    display: none; /* إخفاء شاشة انتهاء اللعبة افتراضيًا */
+}
+
+#game-ui {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    z-index: 5;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #45a049;
+        }
+    }
