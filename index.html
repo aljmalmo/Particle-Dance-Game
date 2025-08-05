@@ -5,37 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Particle Dance</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="assets/images/icon.png">
 </head>
 <body>
-    <div class="game-container">
-        <canvas id="gameCanvas"></canvas>
+    <div id="game-container">
+        <canvas id="game-canvas"></canvas>
         
-        <div class="ui-overlay">
-            <div class="score-container">
-                <div class="score">Score: <span id="scoreValue">0</span></div>
-                <div class="high-score">High Score: <span id="highScoreValue">0</span></div>
-            </div>
-            
-            <div class="level-container">
-                <div class="level">Level: <span id="levelValue">1</span></div>
-            </div>
-            
-            <div class="power-up-container" id="powerUpContainer">
-                <!-- Power-ups will be dynamically added here -->
-            </div>
-            
-            <div class="menu-container">
-                <button id="startButton" class="menu-button">Start Game</button>
-                <button id="pauseButton" class="menu-button hidden">Pause</button>
-                <button id="soundButton" class="menu-button">Sound: ON</button>
-            </div>
-            
-            <div class="game-over-container hidden" id="gameOverContainer">
-                <div class="game-over-text">Game Over</div>
-                <div class="final-score">Final Score: <span id="finalScoreValue">0</span></div>
-                <button id="restartButton" class="menu-button">Play Again</button>
-            </div>
+        <!-- شاشة البداية -->
+        <div id="start-screen" class="screen">
+            <h1>Particle Dance</h1>
+            <button id="start-button">Start Game</button>
+        </div>
+        
+        <!-- شاشة انتهاء اللعبة -->
+        <div id="game-over-screen" class="screen" style="display: none;">
+            <h2>Game Over</h2>
+            <p>Score: <span id="final-score">0</span></p>
+            <button id="play-again-button">Play Again</button>
+        </div>
+        
+        <!-- واجهة المستخدم أثناء اللعب -->
+        <div id="game-ui">
+            <div id="score">Score: 0</div>
+            <div id="level">Level: 1</div>
+            <button id="pause-button">Pause</button>
+            <button id="sound-button">Sound: ON</button>
         </div>
     </div>
 
